@@ -25,11 +25,13 @@ describe "OmniAuth::Strategies::Mendeley" do
 
   context '#uid' do
     before :each do
-      subject.stub(:user_data) { { 'profile_id' => '123' } }
+      subject.stub(:user_data) { { 'profile_id' => '123', "last_synced" => 1364896235 } }
     end
 
     it 'returns the id from user_data' do
       subject.uid.should eq('123')
+      subject.info["profile_id"].should eq("123")
+      subject.info["last_synced"].should eq(1364896235)
     end
   end
 end
