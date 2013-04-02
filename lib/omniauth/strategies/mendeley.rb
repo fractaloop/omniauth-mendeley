@@ -19,7 +19,7 @@ module OmniAuth
       end
 
       info do
-        user_data.delete_if { |k, v| v.nil? || v.length == 0 }
+        user_data.delete_if { |k, v| v.nil? || v.to_s.length == 0 }
       end
 
       extra do
