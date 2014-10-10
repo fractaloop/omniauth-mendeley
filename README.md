@@ -1,3 +1,7 @@
+# DEPRECATED
+
+Mendeley has migrated from OAuth 1 to OAuth 2. As a result, this gem is no longer supported. Please use [hedgesky/omniauth-mendeley](https://github.com/hedgesky/omniauth-mendeley) in the future.
+
 # OmniAuth Mendeley
 
 This is the unofficial OmniAuth strategy for authenticating to Mendeley. To
